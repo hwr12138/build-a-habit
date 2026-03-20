@@ -121,7 +121,6 @@ export default function MainCalendar() {
       dataToSave.updatedAt = new Date().toISOString();
       
       await setDoc(entryRef, dataToSave, { merge: true });
-      alert("Saved successfully!");
       // The prompt says "go back to the Main Calendar Page upon click"
       // Since we are already on the calendar page, maybe just scroll to top or just show alert.
       // Or maybe they meant if we used a separate view. I'll just navigate to /home or stay here.
